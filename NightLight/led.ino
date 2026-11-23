@@ -9,6 +9,12 @@ void setLed(int brightness) {
 
 // Moves the LED toward the target brightness.
 void fadeTowards(int target) {
+  if (ledBrightness < target) {
+    setLed(min(ledBrightness + FadeStep, target));
+  } 
+  else if (ledBrightness > target) {
+    setLed(max(ledBrightness - FadeStep, target));
+  }
   // TODO Task 2 (Developer B): fade in small steps instead of jumping.
   setLed(target);
 }
