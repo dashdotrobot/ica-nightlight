@@ -27,7 +27,11 @@ void handleButton() {
 
 void applyAuto(int light) {
   // TODO Task 5 (Developer A): turn the LED on when it is dark.
-  fadeTowards(0);
+  if (light < DARK_THRESHOLD) {
+    fadeTowards(NIGHT_BRIGHTNESS);
+  } else {
+    fadeTowards(0);
+  }
 }
 
 void applyMode(int light) {
