@@ -18,7 +18,7 @@ A small Arduino night light that your team builds together while practicing Git 
 
 **Developer B (LED):** Your Name (your GitHub username)
 
-**Developer C (Button):** Button
+**Developer C (Button):** jesusttor
 
 ## Wiring
 
