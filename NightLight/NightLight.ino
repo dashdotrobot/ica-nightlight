@@ -14,7 +14,7 @@ void setup() {
   pinMode(LED_PIN, OUTPUT);
   pinMode(BUTTON_PIN, INPUT_PULLUP);
 
-  // TODO Task 6 (Developer B): print the startup banner here.
+  logBanner();
 }
 
 void handleButton() {
