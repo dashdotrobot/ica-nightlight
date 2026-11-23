@@ -7,10 +7,14 @@ void setLed(int brightness) {
   analogWrite(LED_PIN, ledBrightness);
 }
 
-// Moves the LED toward the target brightness.
+// Moves the LED one small step toward the target brightness.
 void fadeTowards(int target) {
-  // TODO Task 2 (Developer B): fade in small steps instead of jumping.
-  setLed(target);
+  if (ledBrightness < target) {
+    setLed(min(ledBrightness + FADE_STEP, target));   // step up, stop at target
+  } else if (ledBrightness > target) {
+    setLed(max(ledBrightness - FADE_STEP, target));   // step down, stop at target
+  }
+  // equal: do nothing
 }
 
 // TODO Task 7 (Developer C): add blinkLed() below this line.
