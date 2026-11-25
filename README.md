@@ -14,7 +14,7 @@ A small Arduino night light that your team builds together while practicing Git 
 
 **Project Manager:** Mitchell Thornton (mitch909)
 
-**Developer A (Sensor):** Your Name (your GitHub username)
+**Developer A (Sensor):** Matt Ford (dashdotrobot)
 
 **Developer B (LED):** Your Name (your GitHub username)
 
