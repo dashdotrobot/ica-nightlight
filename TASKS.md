@@ -35,7 +35,6 @@ Branch: `task2-led`.
 **Goal:** `fadeTowards(target)` moves the LED a small step toward `target` each time it is called, so the LED fades instead of jumping. It is called once on every pass through `loop()`.
 
 **Where:** `led.ino`, inside `fadeTowards()`. Put any new setting in the LED section of `config.h`.
-
 **Hints:**
 
 - `ledBrightness` holds the current brightness. `setLed(value)` changes it and updates the pin.

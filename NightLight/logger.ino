@@ -8,3 +8,7 @@ void logStatus(int light) {
 }
 
 // TODO Task 6 (Developer B): add logBanner() below this line.
+void logBanner() {
+  Serial.println("NightLight");
+  Serial.println("Press the button to cycle through OFF, AUTO, and ON.");
+}

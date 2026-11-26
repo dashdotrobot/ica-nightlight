@@ -14,7 +14,7 @@ void setup() {
   pinMode(LED_PIN, OUTPUT);
   pinMode(BUTTON_PIN, INPUT_PULLUP);
 
-  // TODO Task 6 (Developer B): print the startup banner here.
+  logBanner();
 }
 
 void handleButton() {
@@ -27,7 +27,11 @@ void handleButton() {
 
 void applyAuto(int light) {
   // TODO Task 5 (Developer A): turn the LED on when it is dark.
-  fadeTowards(0);
+  if (light < DARK_THRESHOLD) {
+    fadeTowards(NIGHT_BRIGHTNESS);
+  } else {
+    fadeTowards(0);
+  }
 }
 
 void applyMode(int light) {
